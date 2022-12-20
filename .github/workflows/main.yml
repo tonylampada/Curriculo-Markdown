@@ -1,13 +1,17 @@
-name: Deployment
-
 on:
   push:
     branches:
+      - master 
       - main
-
+permissions:
+  contents: write
 jobs:
-  deployment:
+  deploy:
     runs-on: ubuntu-latest
-    environment: production
     steps:
-      - name: deploy
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+      - run: pip install -r requirements.txt 
+      - run: mkdocs gh-deploy --force

@@ -9,7 +9,7 @@
 
 
 **Dados Pessoais**
-Ingrid Caroline de Jesus
+Ingrid Caroline de Jesus Cristo
 21/04/1999
 São Paulo - SP
 ingridcaroline3012@gmail.com
